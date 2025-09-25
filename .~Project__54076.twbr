@@ -1,0 +1,1979 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (merged_clients)' inline='true' name='federated.01l22ap0wo0xzv1cae6ah1ika498' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='merged_clients' name='excel-direct.0z7mz5i13edb0m16z3wne0emi5cx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/vm/Ironhack/Projects/Vanguard-Digital-Redesign-Impact-Study/Data/Cleaned_data/merged_clients.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0z7mz5i13edb0m16z3wne0emi5cx' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:N10001:no:A1:N10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+            <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+            <column datatype='real' name='clnt_age' ordinal='3' />
+            <column datatype='string' name='gendr' ordinal='4' />
+            <column datatype='integer' name='num_accts' ordinal='5' />
+            <column datatype='real' name='bal' ordinal='6' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+            <column datatype='string' name='Variation' ordinal='9' />
+            <column datatype='string' name='visitor_id' ordinal='10' />
+            <column datatype='string' name='visit_id' ordinal='11' />
+            <column datatype='string' name='process_step' ordinal='12' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss' name='date_time' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N10001:no:A1:N10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_yr]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>clnt_tenure_yr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Previous Step Date' datatype='datetime' name='[Calculation_2559170544823070720]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='LOOKUP( MIN([date_time]), -1 )'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Time Spent (seconds)' datatype='integer' name='[Calculation_2559170544823275521]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;second&apos;, [Calculation_2559170544823070720], [Calculation_2559170544824774658])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Current Date' datatype='datetime' name='[Calculation_2559170544824774658]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='LOOKUP( MIN([date_time]), 0 )'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Completion Rate' datatype='real' name='[Calculation_2559170544826728451]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD( IF [process_step] = &quot;confirm&quot; THEN [visitor_id] END )&#10;/&#10;COUNTD( [visitor_id] )' />
+      </column>
+      <column caption='Tenure Months' datatype='integer' name='[Calculation_2638053907066064896]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[clnt_tenure_yr] * 12 + [clnt_tenure_mnth]' />
+      </column>
+      <column caption='Tenure Bucket' datatype='string' name='[Calculation_2638053907066155009]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_2638053907066064896] &lt; 12 THEN &quot;&lt;1 yr&quot;&#10;ELSEIF [Calculation_2638053907066064896] &lt; 60 THEN &quot;1-5 yr&quot;&#10;ELSEIF [Calculation_2638053907066064896] &lt; 120 THEN &quot;5-10 yr&quot;&#10;ELSE &quot;10+ yr&quot; END' />
+      </column>
+      <column aggregation='Sum' caption='Step Number' datatype='integer' name='[Calculation_2638053907066253314]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='CASE [process_step]&#10;    WHEN &apos;start&apos; THEN 0&#10;    WHEN &apos;step_1&apos; THEN 1&#10;    WHEN &apos;step_2&apos; THEN 2&#10;    WHEN &apos;step_3&apos; THEN 3&#10;    WHEN &apos;confirm&apos; THEN 4&#10;END' />
+      </column>
+      <column caption='Step Duration Minutes' datatype='integer' name='[Calculation_2638053907067146249]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&#10;    &apos;minute&apos;,&#10;    { FIXED [visit_id], [process_step] : MIN([date_time]) },&#10;    { FIXED [visit_id], [process_step] : MAX([date_time]) }&#10;)' />
+      </column>
+      <column caption='Date time Parsed' datatype='datetime' name='[Calculation_2709759657408090113]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF ISNULL([date_time]) THEN&#10;  NULL&#10;ELSE&#10;  DATEPARSE(&quot;dd/MM/yyyy HH:mm:ss&quot;, TRIM(STR([date_time])))&#10;END' />
+      </column>
+      <column caption='Step Duration per Visit per Step' datatype='integer' name='[Calculation_2709759657412857861]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [visit_id], [process_step] : DATEDIFF(&apos;minute&apos;, MIN([date_time]), MAX([date_time])) }' />
+      </column>
+      <column caption='Backward Step Flag' datatype='integer' name='[Calculation_2776961808108429312]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF INDEX() = 1 THEN 0&#10;ELSEIF MIN([Calculation_2638053907066253314]) &lt; LOOKUP(MIN([Calculation_2638053907066253314]), -1) THEN 1&#10;ELSE 0&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Visit Completed' datatype='integer' name='[Calculation_3012556363876282368]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [visit_id] :&#10;    MAX( IF [process_step] = &apos;confirm&apos; THEN 1 ELSE 0 END )&#10;}' />
+      </column>
+      <column caption='Completion Rate %' datatype='real' name='[Calculation_3012556363876769794]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_3012556363876282368]) / COUNTD([visit_id]) * 100' />
+      </column>
+      <column caption='Visit Backtrack Flag' datatype='integer' name='[Calculation_3085950964140425217]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_MAX([Calculation_2776961808108429312])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Backtrack Rate %' datatype='real' name='[Calculation_3085950964140900354]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG([Calculation_3085950964140425217]) * 100'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_DA8F429A1D28456CB780E52C08F33D70]' role='measure' type='quantitative' />
+      <column caption='Bal' datatype='real' name='[bal]' role='measure' type='quantitative' />
+      <column caption='Calls 6 Mnth' datatype='integer' name='[calls_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Mnth' datatype='integer' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='quantitative' />
+      <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Num Accts' datatype='integer' name='[num_accts]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      <column caption='Visitor Id' datatype='string' name='[visitor_id]' role='dimension' type='nominal' />
+      <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zc/ljl3_lqn79125zg278rlpwtr0000gn/T/tableau-temp/#TableauTemp_0kz055017qhfm5126qp7k193uktp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/25/2025 09:30:19 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>client_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>292626</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clnt_tenure_yr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[clnt_tenure_yr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clnt_tenure_yr</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clnt_tenure_mnth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[clnt_tenure_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clnt_tenure_mnth</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1047</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clnt_age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[clnt_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clnt_age</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>263</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gendr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gendr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gendr</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_accts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_accts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_accts</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bal</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>186125</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calls_6_mnth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calls_6_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calls_6_mnth</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>logons_6_mnth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[logons_6_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>logons_6_mnth</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variation</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visitor_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visitor_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visitor_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>300887</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visit_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>342174</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_S2' />
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_time</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>679972</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_DA8F429A1D28456CB780E52C08F33D70]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Variation:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Control&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Test&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_DA8F429A1D28456CB780E52C08F33D70'>
+            <properties context=''>
+              <relation connection='excel-direct.0z7mz5i13edb0m16z3wne0emi5cx' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:N10001:no:A1:N10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+                  <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+                  <column datatype='real' name='clnt_age' ordinal='3' />
+                  <column datatype='string' name='gendr' ordinal='4' />
+                  <column datatype='integer' name='num_accts' ordinal='5' />
+                  <column datatype='real' name='bal' ordinal='6' />
+                  <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+                  <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+                  <column datatype='string' name='Variation' ordinal='9' />
+                  <column datatype='string' name='visitor_id' ordinal='10' />
+                  <column datatype='string' name='visit_id' ordinal='11' />
+                  <column datatype='string' name='process_step' ordinal='12' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss' name='date_time' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_3DD2FDA0097C4869B0F72F50D5823126]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Experiment Insights Dashboard' type='sheet' worksheet='Completion Rate' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Experiment Insights Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_12E8F708CB5048778971A328B833E147]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Experiment Insights Dashboard' type='sheet' worksheet='Error Rate' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Experiment Insights Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action5_56884C019B074234ABED262B099C9160]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Experiment Insights Dashboard' type='sheet' worksheet='Funnel' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Experiment Insights Dashboard' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action5_CBEC0FFA192A48BCB4E7F9409B1733C1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Experiment Insights Dashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Variation' />
+        <param name='target' value='Experiment Insights Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action5_E3CB5E06A53E410BBF31FAF67BB8D5C6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Experiment Insights Dashboard' type='sheet' worksheet='Avg Time per Step' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Experiment Insights Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Time per Step'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+            <column caption='Step Duration per Visit per Step' datatype='integer' name='[Calculation_2709759657412857861]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [visit_id], [process_step] : DATEDIFF(&apos;minute&apos;, MIN([date_time]), MAX([date_time])) }' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2709759657412857861]' derivation='Avg' name='[avg:Calculation_2709759657412857861:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2709759657412857861:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' />
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2709759657412857861:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2709759657412857861:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2709759657412857861:qk]</rows>
+        <cols>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{9FB6AB71-2573-4A1D-A92C-2B2488E7626E}' />
+    </worksheet>
+    <worksheet name='Avg Time per Step'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+            <column caption='Step Duration Minutes' datatype='integer' name='[Calculation_2638053907067146249]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&#10;    &apos;minute&apos;,&#10;    { FIXED [visit_id], [process_step] : MIN([date_time]) },&#10;    { FIXED [visit_id], [process_step] : MAX([date_time]) }&#10;)' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2638053907067146249]' derivation='Avg' name='[avg:Calculation_2638053907067146249:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2638053907067146249]' derivation='Median' name='[med:Calculation_2638053907067146249:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' included-values='in-range'>
+            <min>0.39972578835846934</min>
+            <max>2.5115360255752934</max>
+          </filter>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[med:Calculation_2638053907067146249:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>0.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]'>
+            <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]'>
+            <groupfilter function='level-members' level='[none:process_step:nk]' />
+          </filter>
+          <manual-sort column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;start&quot;</bucket>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[med:Calculation_2638053907067146249:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' />
+              <text column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' />
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]</rows>
+        <cols>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]</cols>
+      </table>
+      <simple-id uuid='{6179A6E8-DA5B-42CF-B521-1418167F57BE}' />
+    </worksheet>
+    <worksheet name='Completion Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+            <column caption='Completion Rate' datatype='real' name='[Calculation_2559170544826728451]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD( IF [process_step] = &quot;confirm&quot; THEN [visitor_id] END )&#10;/&#10;COUNTD( [visitor_id] )' />
+            </column>
+            <column caption='Tenure Months' datatype='integer' name='[Calculation_2638053907066064896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[clnt_tenure_yr] * 12 + [clnt_tenure_mnth]' />
+            </column>
+            <column caption='Tenure Bucket' datatype='string' name='[Calculation_2638053907066155009]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_2638053907066064896] &lt; 12 THEN &quot;&lt;1 yr&quot;&#10;ELSEIF [Calculation_2638053907066064896] &lt; 60 THEN &quot;1-5 yr&quot;&#10;ELSEIF [Calculation_2638053907066064896] &lt; 120 THEN &quot;5-10 yr&quot;&#10;ELSE &quot;10+ yr&quot; END' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+            <column caption='Clnt Tenure Mnth' datatype='integer' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+            <column caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+            <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2638053907066155009]' derivation='None' name='[none:Calculation_2638053907066155009:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[clnt_age]' derivation='None' name='[none:clnt_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date_time]' derivation='None' name='[none:date_time:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2559170544826728451]' derivation='User' name='[usr:Calculation_2559170544826728451:qk]' pivot='key' type='quantitative' />
+            <column caption='Visitor Id' datatype='string' name='[visitor_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Calculation_2638053907066155009:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_2638053907066155009:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:clnt_age:qk]' included-values='in-range'>
+            <min>17.0</min>
+            <max>96.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:date_time:qk]' included-values='in-range'>
+            <min>#2017-03-15 00:00:00#</min>
+            <max>#2017-06-20 23:59:57#</max>
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:gendr:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:gendr:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:gendr:nk]' member='&quot;M&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:clnt_age:qk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Calculation_2638053907066155009:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:gendr:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:date_time:qk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='subtotal' field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' />
+              <text column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]</rows>
+        <cols>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{8FC3F0CA-EEE3-47EE-9B86-9FFF32AEDD3C}' />
+    </worksheet>
+    <worksheet name='Error Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+            <column aggregation='Sum' caption='Step Number' datatype='integer' name='[Calculation_2638053907066253314]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='CASE [process_step]&#10;    WHEN &apos;start&apos; THEN 0&#10;    WHEN &apos;step_1&apos; THEN 1&#10;    WHEN &apos;step_2&apos; THEN 2&#10;    WHEN &apos;step_3&apos; THEN 3&#10;    WHEN &apos;confirm&apos; THEN 4&#10;END' />
+            </column>
+            <column caption='Backward Step Flag' datatype='integer' name='[Calculation_2776961808108429312]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF INDEX() = 1 THEN 0&#10;ELSEIF MIN([Calculation_2638053907066253314]) &lt; LOOKUP(MIN([Calculation_2638053907066253314]), -1) THEN 1&#10;ELSE 0&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Visit Backtrack Flag' datatype='integer' name='[Calculation_3085950964140425217]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_MAX([Calculation_2776961808108429312])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Backtrack Rate %' datatype='real' name='[Calculation_3085950964140900354]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG([Calculation_3085950964140425217]) * 100'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[date_time]' derivation='Count' name='[cnt:date_time:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[visit_id]' derivation='None' name='[none:visit_id:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2776961808108429312]' derivation='User' name='[usr:Calculation_2776961808108429312:qk:5]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Calculation_3085950964140425217]' derivation='User' name='[usr:Calculation_3085950964140425217:qk:7]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+              <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_2776961808108429312]' ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Calculation_3085950964140900354]' derivation='User' name='[usr:Calculation_3085950964140900354:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' ordering-type='Field' />
+              <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_2776961808108429312]' ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' ordering-type='Field' />
+              <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_3085950964140425217]' ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' ordering-type='Field' />
+            </column-instance>
+            <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]'>
+            <groupfilter function='level-members' level='[none:process_step:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]'>
+            <groupfilter function='level-members' level='[none:visit_id:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]' included-values='in-range' />
+          <slices>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' />
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' />
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' />
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk] * ([federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5] + [federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]))</rows>
+        <cols>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{9EA0C6F8-5FA9-4386-83FF-7C9D4D563B38}' />
+    </worksheet>
+    <worksheet name='Funnel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[visit_id]' derivation='CountD' name='[ctd:visit_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[visit_id]' derivation='CountD' name='[pcto:ctd:visit_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[ctd:visit_id:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]'>
+            <groupfilter function='level-members' level='[none:process_step:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[ctd:visit_id:qk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' />
+              <text column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[pcto:ctd:visit_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]</rows>
+        <cols>[federated.01l22ap0wo0xzv1cae6ah1ika498].[ctd:visit_id:qk]</cols>
+      </table>
+      <simple-id uuid='{B3657B4F-794E-482B-B246-4103BE5895A9}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+            <column aggregation='Sum' caption='Step Number' datatype='integer' name='[Calculation_2638053907066253314]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='CASE [process_step]&#10;    WHEN &apos;start&apos; THEN 0&#10;    WHEN &apos;step_1&apos; THEN 1&#10;    WHEN &apos;step_2&apos; THEN 2&#10;    WHEN &apos;step_3&apos; THEN 3&#10;    WHEN &apos;confirm&apos; THEN 4&#10;END' />
+            </column>
+            <column caption='Backward Step Flag' datatype='integer' name='[Calculation_2776961808108429312]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF INDEX() = 1 THEN 0&#10;ELSEIF MIN([Calculation_2638053907066253314]) &lt; LOOKUP(MIN([Calculation_2638053907066253314]), -1) THEN 1&#10;ELSE 0&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Visit Backtrack Flag' datatype='integer' name='[Calculation_3085950964140425217]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_MAX([Calculation_2776961808108429312])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Backtrack Rate %' datatype='real' name='[Calculation_3085950964140900354]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG([Calculation_3085950964140425217]) * 100'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[date_time]' derivation='Count' name='[cnt:date_time:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[visit_id]' derivation='None' name='[none:visit_id:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2776961808108429312]' derivation='User' name='[usr:Calculation_2776961808108429312:qk:5]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Calculation_3085950964140425217]' derivation='User' name='[usr:Calculation_3085950964140425217:qk:7]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+              <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_2776961808108429312]' ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Calculation_3085950964140900354]' derivation='User' name='[usr:Calculation_3085950964140900354:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' ordering-type='Field' />
+              <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_2776961808108429312]' ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+              <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_3085950964140425217]' ordering-type='Field'>
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+                <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+                <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+              </table-calc>
+            </column-instance>
+            <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]'>
+            <groupfilter function='level-members' level='[none:visit_id:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</column>
+            <column>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' />
+              <lod column='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>(([federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk] / [federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]) * ([federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5] + [federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk]))</rows>
+        <cols>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{96BFBC05-719B-41BE-8660-674BEB9BFC0D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Experiment Insights Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Sheet1 (merged_clients)' name='federated.01l22ap0wo0xzv1cae6ah1ika498' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01l22ap0wo0xzv1cae6ah1ika498'>
+        <column caption='Completion Rate' datatype='real' name='[Calculation_2559170544826728451]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='COUNTD( IF [process_step] = &quot;confirm&quot; THEN [visitor_id] END )&#10;/&#10;COUNTD( [visitor_id] )' />
+        </column>
+        <column caption='Tenure Bucket' datatype='string' name='[Calculation_2638053907066155009]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Calculation_2638053907066064896] &lt; 12 THEN &quot;&lt;1 yr&quot;&#10;ELSEIF [Calculation_2638053907066064896] &lt; 60 THEN &quot;1-5 yr&quot;&#10;ELSEIF [Calculation_2638053907066064896] &lt; 120 THEN &quot;5-10 yr&quot;&#10;ELSE &quot;10+ yr&quot; END' />
+        </column>
+        <column caption='Step Duration Minutes' datatype='integer' name='[Calculation_2638053907067146249]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='DATEDIFF(&#10;    &apos;minute&apos;,&#10;    { FIXED [visit_id], [process_step] : MIN([date_time]) },&#10;    { FIXED [visit_id], [process_step] : MAX([date_time]) }&#10;)' />
+        </column>
+        <column caption='Backward Step Flag' datatype='integer' name='[Calculation_2776961808108429312]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF INDEX() = 1 THEN 0&#10;ELSEIF MIN([Calculation_2638053907066253314]) &lt; LOOKUP(MIN([Calculation_2638053907066253314]), -1) THEN 1&#10;ELSE 0&#10;END'>
+            <table-calc ordering-type='Rows' />
+          </calculation>
+        </column>
+        <column caption='Visit Backtrack Flag' datatype='integer' name='[Calculation_3085950964140425217]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='WINDOW_MAX([Calculation_2776961808108429312])'>
+            <table-calc ordering-type='Rows' />
+          </calculation>
+        </column>
+        <column caption='Backtrack Rate %' datatype='real' name='[Calculation_3085950964140900354]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='WINDOW_AVG([Calculation_3085950964140425217]) * 100'>
+            <table-calc ordering-type='Rows' />
+          </calculation>
+        </column>
+        <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_2638053907067146249]' derivation='Avg' name='[avg:Calculation_2638053907067146249:qk]' pivot='key' type='quantitative' />
+        <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+        <column-instance column='[date_time]' derivation='Count' name='[cnt:date_time:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[visit_id]' derivation='CountD' name='[ctd:visit_id:qk]' pivot='key' type='quantitative' />
+        <column caption='Date Time' datatype='datetime' datatype-customized='true' name='[date_time]' role='dimension' type='ordinal' />
+        <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_2638053907066155009]' derivation='None' name='[none:Calculation_2638053907066155009:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+        <column-instance column='[clnt_age]' derivation='None' name='[none:clnt_age:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[date_time]' derivation='None' name='[none:date_time:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+        <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+        <column-instance column='[visit_id]' derivation='None' name='[none:visit_id:nk]' pivot='key' type='nominal' />
+        <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_2559170544826728451]' derivation='User' name='[usr:Calculation_2559170544826728451:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_2776961808108429312]' derivation='User' name='[usr:Calculation_2776961808108429312:qk:5]' pivot='key' type='quantitative'>
+          <table-calc ordering-type='Field'>
+            <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+            <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+            <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+          </table-calc>
+        </column-instance>
+        <column-instance column='[Calculation_3085950964140425217]' derivation='User' name='[usr:Calculation_3085950964140425217:qk:7]' pivot='key' type='quantitative'>
+          <table-calc ordering-type='Field'>
+            <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+            <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+            <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+          </table-calc>
+          <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_2776961808108429312]' ordering-type='Field'>
+            <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[process_step]' />
+            <order field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' />
+            <sort direction='ASC' using='[federated.01l22ap0wo0xzv1cae6ah1ika498].[cnt:date_time:qk]' />
+          </table-calc>
+        </column-instance>
+        <column-instance column='[Calculation_3085950964140900354]' derivation='User' name='[usr:Calculation_3085950964140900354:qk:4]' pivot='key' type='quantitative'>
+          <table-calc ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' ordering-type='Field' />
+          <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_2776961808108429312]' ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' ordering-type='Field' />
+          <table-calc field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[Calculation_3085950964140425217]' ordering-field='[federated.01l22ap0wo0xzv1cae6ah1ika498].[visit_id]' ordering-type='Field' />
+        </column-instance>
+        <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98212' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='894'>
+            <zone h='98212' id='5' type-v2='layout-basic' w='89702' x='468' y='894'>
+              <zone h='49106' id='3' name='Completion Rate' w='44851' x='468' y='894'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49106' id='10' name='Avg Time per Step' w='44851' x='468' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49106' id='11' name='Error Rate' w='44851' x='45319' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49106' id='12' name='Funnel' w='44851' x='45319' y='894'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98212' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='894'>
+              <zone fixed-size='62' h='7821' id='8' is-fixed='true' name='Completion Rate' pane-specification-id='0' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='color' w='9362' x='90170' y='894'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='25' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:clnt_age:qk]' type-v2='filter' values='database' w='9362' x='90170' y='8715'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='26' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]' type-v2='filter' values='database' w='9362' x='90170' y='13736'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='27' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:date_time:qk]' type-v2='filter' values='database' w='9362' x='90170' y='18757'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='28' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:gendr:nk]' type-v2='filter' values='database' w='9362' x='90170' y='23778'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='29' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Calculation_2638053907066155009:nk]' type-v2='filter' values='database' w='9362' x='90170' y='28799'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='30' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='33820'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='33' name='Avg Time per Step' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' type-v2='filter' values='database' w='9362' x='90170' y='38841'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='34' name='Avg Time per Step' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' type-v2='filter' values='database' w='9362' x='90170' y='43862'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='35' name='Avg Time per Step' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='48883'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='36' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]' type-v2='filter' values='database' w='9362' x='90170' y='53904'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='37' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5]' type-v2='filter' values='database' w='9362' x='90170' y='58925'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='40' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' type-v2='filter' values='database' w='9362' x='90170' y='63946'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='43' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='68967'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='44' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' type-v2='filter' values='database' w='9362' x='90170' y='73988'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='45' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]' type-v2='filter' values='database' w='9362' x='90170' y='79009'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='46' name='Funnel' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[ctd:visit_id:qk]' type-v2='filter' values='database' w='9362' x='90170' y='84030'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='47' name='Funnel' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' type-v2='filter' values='database' w='9362' x='90170' y='89051'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5034' id='48' name='Funnel' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='94072'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2350' minheight='2350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='70' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98212' id='69' param='vert' type-v2='layout-flow' w='99064' x='468' y='894'>
+                <zone h='5021' id='25' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:clnt_age:qk]' type-v2='filter' values='database' w='9362' x='90170' y='8715'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='26' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]' type-v2='filter' values='database' w='9362' x='90170' y='13736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='27' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:date_time:qk]' type-v2='filter' values='database' w='9362' x='90170' y='18757'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='28' mode='checkdropdown' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:gendr:nk]' type-v2='filter' values='database' w='9362' x='90170' y='23778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='29' mode='checkdropdown' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Calculation_2638053907066155009:nk]' type-v2='filter' values='database' w='9362' x='90170' y='28799'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='30' mode='checkdropdown' name='Completion Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='33820'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49106' id='3' is-fixed='true' name='Completion Rate' w='44851' x='468' y='894'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='7821' id='8' name='Completion Rate' pane-specification-id='0' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='color' w='9362' x='90170' y='894'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='46' name='Funnel' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[ctd:visit_id:qk]' type-v2='filter' values='database' w='9362' x='90170' y='84030'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='47' mode='checkdropdown' name='Funnel' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' type-v2='filter' values='database' w='9362' x='90170' y='89051'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5034' id='48' mode='checkdropdown' name='Funnel' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='94072'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49106' id='12' is-fixed='true' name='Funnel' w='44851' x='45319' y='894'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='33' name='Avg Time per Step' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[avg:Calculation_2638053907067146249:qk]' type-v2='filter' values='database' w='9362' x='90170' y='38841'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='34' mode='checkdropdown' name='Avg Time per Step' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' type-v2='filter' values='database' w='9362' x='90170' y='43862'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='35' mode='checkdropdown' name='Avg Time per Step' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='48883'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49106' id='10' is-fixed='true' name='Avg Time per Step' w='44851' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='36' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140900354:qk:4]' type-v2='filter' values='database' w='9362' x='90170' y='53904'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='37' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2776961808108429312:qk:5]' type-v2='filter' values='database' w='9362' x='90170' y='58925'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='40' mode='checkdropdown' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:process_step:nk]' type-v2='filter' values='database' w='9362' x='90170' y='63946'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='43' mode='checkdropdown' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type-v2='filter' values='database' w='9362' x='90170' y='68967'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='44' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_3085950964140425217:qk:7]' type-v2='filter' values='database' w='9362' x='90170' y='73988'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5021' id='45' mode='checkdropdown' name='Error Rate' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:visit_id:nk]' type-v2='filter' values='database' w='9362' x='90170' y='79009'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49106' id='11' is-fixed='true' name='Error Rate' w='44851' x='45319' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{266CC249-C6AD-4756-B9C2-467D2CF764C6}' />
+    </dashboard>
+    <dashboard name='User Journey Insights' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Dashboard' captured-sheet='Experiment Insights Dashboard' id='1' />
+                  <story-point captured-sheet='Completion Rate' id='2' />
+                  <story-point captured-sheet='Completion Rate' id='6'>
+                    <capturedDeltas>
+                      <worksheet name='Completion Rate'>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]</field>
+                                  <field>[federated.01l22ap0wo0xzv1cae6ah1ika498].[usr:Calculation_2559170544826728451:qk]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>&quot;Test&quot;</value>
+                                <value>0.64710342735820447</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point captured-sheet='Avg Time per Step' id='3' />
+                  <story-point captured-sheet='Funnel' id='4' />
+                  <story-point captured-sheet='Error Rate' id='5' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{71D66863-0859-401D-92F6-B6000217B532}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Completion Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{76711495-37C3-4218-BF02-0A55728CB319}' />
+    </window>
+    <window class='worksheet' name='Average Time per Step'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41B0287C-9909-43E8-B7DB-4E05999C9F35}' />
+    </window>
+    <window class='worksheet' name='Avg Time per Step'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F09D637-8E7C-4093-A15F-DE27879E7A8E}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{72B728D7-5279-4CA9-88F1-5015462F672F}' />
+    </window>
+    <window class='worksheet' name='Error Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7EC84B27-BEA1-421B-A14F-7BFA319EB8A7}' />
+    </window>
+    <window class='worksheet' name='Funnel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01l22ap0wo0xzv1cae6ah1ika498].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FDAAD09-4A9E-4AB1-B49A-E11381D7EF2E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Experiment Insights Dashboard'>
+      <viewpoints>
+        <viewpoint name='Avg Time per Step'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Completion Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Error Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Funnel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='35' />
+      <simple-id uuid='{626B8E29-8539-4473-83B8-9C8AFC64A796}' />
+    </window>
+    <window class='dashboard' name='User Journey Insights'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{DC91CBA1-ADDC-4F13-BE2F-DAB0A38BCB51}' />
+    </window>
+  </windows>
+</workbook>
